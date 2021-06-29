@@ -32,4 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 
+### External Files ###
+/00-starter-files
 /01-starter-files
