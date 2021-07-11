@@ -1,9 +1,6 @@
 package br.edu.ifg.pw.storecluster.config;
 
-import br.edu.ifg.pw.storecluster.entity.Country;
-import br.edu.ifg.pw.storecluster.entity.Product;
-import br.edu.ifg.pw.storecluster.entity.ProductCategory;
-import br.edu.ifg.pw.storecluster.entity.State;
+import br.edu.ifg.pw.storecluster.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -43,6 +40,7 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
         disableHttpMethods(Product.class, config, theUnsupportedActions);
         disableHttpMethods(Country.class, config, theUnsupportedActions);
         disableHttpMethods(State.class, config, theUnsupportedActions);
+        disableHttpMethods(Order.class, config, theUnsupportedActions);
 
         //call an internal helper method to expose ids
         exposeIds(config);
