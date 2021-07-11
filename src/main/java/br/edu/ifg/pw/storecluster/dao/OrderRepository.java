@@ -1,4 +1,4 @@
-package br.edu.ifg.pw.storecluster.dto;
+package br.edu.ifg.pw.storecluster.dao;
 
 import br.edu.ifg.pw.storecluster.entity.Order;
 import org.springframework.data.domain.Page;
