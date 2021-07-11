@@ -5,7 +5,6 @@ import br.edu.ifg.pw.storecluster.dto.PurchaseResponse;
 import br.edu.ifg.pw.storecluster.service.CheckoutService;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin("http://localhost:4200")
 @RestController
 @RequestMapping("/api/checkout")
 public class CheckoutController {
